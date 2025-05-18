@@ -12,6 +12,7 @@ export async function POST(request: NextRequest) {
       const accessToken = response.AccessToken;
 
       console.log('zxczsdaw', response)
+      console.log("kok gak ada ya?", process.env)
 
       if (!refreshToken || !accessToken) {
          throw new Error("Failed to get refresh token or access token");
