@@ -1,0 +1,11 @@
+# .github/workflows/test-runner.yml
+name: Test Self-Hosted Runner
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: [self-hosted, master]
+    steps:
+      - run: echo "Runner berhasil jalan di EC2!"
